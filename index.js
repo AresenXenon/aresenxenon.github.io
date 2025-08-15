@@ -104,14 +104,14 @@
             document.addEventListener('mousemove', updateBackground);
 
             // Tech stack tooltips
-            const techNames = ['HTML', 'CSS', 'JavaScript'];
+            const techNames = ['HTML', 'CSS', 'Godot', 'unity', 'Blender', 'photoshop',];
             
             techImages.forEach((container, index) => {
                 const tooltip = document.createElement('div');
                 tooltip.textContent = techNames[index] || 'Tech';
                 tooltip.style.cssText = `
                     position: absolute;
-                    top: -35px;
+                    top: -10px;
                     left: 50%;
                     transform: translateX(-50%);
                     background: rgba(34, 197, 94, 0.9);
