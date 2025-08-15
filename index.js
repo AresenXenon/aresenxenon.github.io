@@ -104,7 +104,7 @@
             document.addEventListener('mousemove', updateBackground);
 
             // Tech stack tooltips
-            // const techNames = ['HTML', 'CSS', 'JavaScript'];
+            const techNames = ['HTML', 'CSS', 'JavaScript'];
             
             techImages.forEach((container, index) => {
                 const tooltip = document.createElement('div');

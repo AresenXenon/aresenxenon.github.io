@@ -199,12 +199,15 @@
     margin-top: 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .cards-wrapper {
-        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1280px) {
+    .cards-wrapper {
         grid-template-columns: repeat(5, minmax(0, 1fr));
-        gap: 2rem;
-        margin-top: 20px;
     }
 }
 
@@ -243,8 +246,8 @@
 
 
 .about-image {
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: auto;
     border-radius: 8px;
     transition: transform 0.3s ease;
     object-fit: cover;
